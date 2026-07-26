@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Metrics 360 - Real-Time Global Weather Intelligence</title>
+    <meta name="description" content="Live Weather Metrics 360: Real-time hyper-local weather telemetry, Doppler rain radar, AQI health advisory, and crop fieldwork forecast powered by Hassan Asghar.">
+    <meta name="author" content="Hassan Asghar">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #020617 0%, #1a1a2e 100%);
+            color: #f8fafc;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: rgba(56, 189, 248, 0.6);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .feature-card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(56, 189, 248, 0.05);
+            border-radius: 1rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 100%);
+            color: #020617;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .stat-box {
+            background: rgba(56, 189, 248, 0.1);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border-left: 3px solid #38bdf8;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            border-top: 1px solid rgba(56, 189, 248, 0.2);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .author-credit {
+            margin-top: 1rem;
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Live Weather Metrics 360</h1>
+            <p class="tagline">Real-Time Hyper-Local Weather Intelligence & Multi-Sector Advisory System</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Global Cities</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">135</div>
+                <div class="stat-label">Features</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Database Needed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">4h</div>
+                <div class="stat-label">Update Frequency</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🌡️</div>
+                <h3>Real-Time Weather</h3>
+                <p>Live temperature, humidity, pressure, and wind data from Open-Meteo API with zero API key requirement.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Air Quality Index (AQI)</h3>
+                <p>Comprehensive AQI estimation with health advisories for sensitive groups and elderly care recommendations.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🚜</div>
+                <h3>Agricultural Insights</h3>
+                <p>Soil moisture tracking, drought risk assessment, and optimal fieldwork timing for farmers.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✈️</div>
+                <h3>Aviation Advisory</h3>
+                <p>Airport delay risk index, visibility restrictions, and crosswind warnings for travel safety.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Health Alerts</h3>
+                <p>UV index tracking, clothing recommendations, and child immunity advisories based on current conditions.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>SEO Optimized</h3>
+                <p>Auto-generated humanized content with JSON-LD schemas, sitemap sync, and IndexNow protocol integration.</p>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 style="margin-bottom: 1.5rem; color: #38bdf8;">Get Started Today</h2>
+            <p style="margin-bottom: 1.5rem; color: #cbd5e1;">
+                Live Weather Metrics 360 runs completely free on GitHub Actions & GitHub Pages.
+                <br>Zero database, zero cost, infinite scale.
+            </p>
+            <a href="data/" class="cta-button">📂 View Weather Data</a>
+            <a href="sitemap.html" class="cta-button">🗺️ Browse Archive</a>
+            <a href="https://github.com/hassanasghar971-ui/Liveweathermatrix360" class="cta-button">🔗 View on GitHub</a>
+        </div>
+        
+        <footer>
+            <p>Live Weather Metrics 360 — Powered by automated real-time weather intelligence</p>
+            <p>Using Open-Meteo API • GitHub Pages • GitHub Actions</p>
+            <div class="author-credit">
+                <p>🎯 Built & Architected by: <strong>Hassan Asghar</strong></p>
+                <p>Lead Weather & Systems Automation Architect</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
